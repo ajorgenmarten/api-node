@@ -1,0 +1,26 @@
+{
+    "permissions": [
+        {"name":"refresh-token", "descriptions":"Access to refresh token"},
+        {"name":"create-user", "descriptions":"Create a user"},
+        {"name":"create-role", "descriptions":"Create a role"},
+        {"name":"create-permission", "descriptions":"Create a permission"}
+    ],
+    "roles":[
+        {"name":"admin", "permissions":["refresh-token", "create-user", "create-role", "create-permission"]},
+        {"name":"user", "permissions":["refresh-token"]}
+    ],
+    "users": [
+        {
+            "name":"Admin",
+            "username":"admin",
+            "password":"admin",
+            "roles": ["admin"]
+        },
+        {
+            "name":"Admin",
+            "username":"admin",
+            "password":"admin",
+            "roles": ["user"]
+        }
+    ]
+}
